@@ -16,18 +16,18 @@ class Stack {
   }
 
   push(record) {
-    this.data.unshift(record);
+    this.data.push(record);
   }
 
   // pop() remove the last one shift() removes the first one
   // stack is FILO - First In Last Out
   // Weave we used pop() because is FIFO - First In First Out
   pop() {
-    return this.data.shift();
+    return this.data.pop();
   }
 
   peek() {
-    return this.data[0];
+    return this.data[this.data.length - 1];
   }
 }
 
