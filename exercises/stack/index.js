@@ -10,6 +10,25 @@
 //   s.pop(); // returns 2
 //   s.pop(); // returns 1
 
-class Stack {}
+class Stack {
+  constructor() {
+    this.data = [];
+  }
+
+  push(record) {
+    this.data.unshift(record);
+  }
+
+  // pop() remove the last one shift() removes the first one
+  // stack is FILO - First In Last Out
+  // Weave we used pop() because is FIFO - First In First Out
+  pop() {
+    return this.data.shift();
+  }
+
+  peek() {
+    return this.data[0];
+  }
+}
 
 module.exports = Stack;
