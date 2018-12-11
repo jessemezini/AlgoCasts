@@ -21,7 +21,7 @@ class Stack {
 
   // pop() remove the last one shift() removes the first one
   // stack is FILO - First In Last Out
-  // Weave we used pop() because is FIFO - First In First Out
+  // Weave we used unshift() because is FIFO - First In First Out
   pop() {
     return this.data.pop();
   }
